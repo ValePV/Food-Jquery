@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>FoodMap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <header>
+    <div class="row splash">
+      <div class="hidden-xs hidden-sm col-md-11 col-md-offset-3 ">
+        <img class ="img-splash" src="assets/images/map.gif">
+      </div>
+    </div>
+    <div class="row splash">
+      <div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+        <img class ="img-splash1" src="assets/images/map.gif">
+      </div>
+    </div>
+    <div class="row">
+      <div class="title page-header col-xs-12 col-sm-12 col-md-12">
+        <h1 class="text-center">FoodMap</h1>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-6 col-md-offset-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3329.622775512664!2d-70.63578947654202!3d-33.433077755087815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513225284269" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-10 hidden-md hidden-lg">
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3329.622775512664!2d-70.63578947654202!3d-33.433077755087815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513225284269" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+      <div class="title page-header col-xs-6 col-sm-6 col-md-6 col-md-offset-3">
+        <h3 class="text-center">Que tipo de comida buscas?</h3>
+      </div>
+    </div>
+    <div class="row filter">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-1 col-md-2 col-md-offset-3">
+        <select class="form-control sec-filter sec-style" >
+          <option value="0">Estilo</option>
+          <option value="Bar">Bar</option>
+          <option value="Sandwicheria">Sandwicheria</option>
+          <option value="Tapas">Tapas</option>
+          <option value="Pasta">Pasta</option>
+        </select>
+      </div>
+      <div class="hidden-xs hidden-sm col-md-2">
+        <select class="form-control sec-filter sec-ideal">
+          <option value="0">Ideal</option>
+          <option value="Disfrutar de buenos tragos">Disfrutar de buenos tragos</option>
+          <option value="Salida en grupo">Salida en grupo</option>
+          <option value="Disfrutar buena Comida y tragos">Disfrutar buena Comida y Tragos</option>
+          <option value="Disfrutar buena Comida">Disfrutar buena Comida</option>
+        </select>
+      </div>
+      <div class="hidden-xs hidden-sm  col-md-2">
+        <select class="form-control sec-filter sec-price">
+          <option value="0">Precio</option>
+          <option value="$">$</option>
+          <option value="$$">$$</option>
+          <option value="$$$">$$$</option>
+        </select>
+      </div>
+    </div>
+    <div class="row filter">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-1 hidden-md hidden-lg">
+        <select class="form-control sec-filter sec-ideal1">
+          <option value="0">Ideal</option>
+          <option value="Disfrutar de buenos tragos">Disfrutar de buenos tragos</option>
+          <option value="Salida en grupo">Salida en grupo</option>
+          <option value="Disfrutar buena Comida y tragos">Disfrutar buena Comida y Tragos</option>
+          <option value="Disfrutar buena Comida">Disfrutar buena Comida</option>
+        </select>
+      </div>
+    </div> 
+    <div class="row filter">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-1 hidden-md hidden-lg">
+        <select class="form-control sec-filter sec-price1">
+          <option value="0">Precio</option>
+          <option value="$">$</option>
+          <option value="$$">$$</option>
+          <option value="$$$">$$$</option>
+        </select>
+      </div>
+    </div>   
+  </section>
+  <section>
+    <div class="row">
+      <div class="col-xs-9 col-xs-offset-2 col-sm-9 col-sm-offset-2 col-md-9 col-md-offset-2">
+        <span class="resta">
+          
+        </span>
+      </div>
+      
+    </div>
+  </section>
+  <section>
+    <div class="modal fade" id="modal-restDescription" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="row">
+          <div class="modal-content cont col-xs-12 col-sm-12 col-md-10">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2 class="modal-title text-center">Ruca Bar</h2>
+            </div>
+            <div class="modal-body row">
+              <div class="col-xs-12 col-sm-12 col-md-6">
+                <img src="assets/images/rucabar.jpg">
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6">
+                <p class="text-center"><i class="fa fa-map-marker" aria-hidden="true"></i>  Avenida Condell 868, Barrio Italia</p>
+                <p class="text-center">Providencia</p>
+                <p class="text-center"><i class="fa fa-phone" aria-hidden="true"></i>  +56 2 2706 0813</p>
+
+                <p class="text-center">Tapas - Mediterránea</p>
+                <p class="text-center">$$</p>
+                <p class="text-center"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+              </div>
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Reservar</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- row-->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </section>
+  
+  
+
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/ada9774bec.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

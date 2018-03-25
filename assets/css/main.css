@@ -1,0 +1,66 @@
+body{
+  background-color:  #2B432D;
+}
+
+.img-splash{
+  width: 43%;
+}
+.img-splash1{
+  width: 100%;
+  margin-top:150px;
+  margin-bottom: 100px;
+}
+h1{
+  font-family: 'Fresca';
+  font-size: 70px;
+  margin: 0;
+  color: #F8DD5E;
+}
+h3{
+  font-family: 'Fresca';
+  color:#FCECA2; 
+}
+h2{
+  font-family: 'Fresca';
+}
+.title{
+  margin-top: 10px;
+}
+iframe{
+  border:5px solid #F8DD5E;
+  width: 100%;
+  height: 350px;
+}
+.maps{
+  border:5px solid #F8DD5E;
+  width: 100%;
+  height: 250px;
+}
+img{
+  width: 200px;
+}
+.filter{
+  padding-top: 10px;
+}
+option{
+  background-color: #A3DBA7;
+  color: #464AE5;
+}
+.sec-filter{
+  background-color: #E1D7A0;
+  color: #24672A;
+}
+.rest{
+  display: inline-block;
+}
+.restim{
+  width: 200px;
+  height: 150px;
+  filter: cover;
+  padding: 10px;
+  margin:10px;
+  border:5px solid #FCECA2;
+}
+.cont{
+  background-color: #E1D7A0;
+}
